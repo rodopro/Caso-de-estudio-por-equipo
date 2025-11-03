@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar dispositivo</title>
+    <link rel="stylesheet" href="celular.css">
+</head>
+<body>
+        <div id="app-wrapper" class="hidden">
+
+       <header id="registroHeader">
+            <h1>Sistema de Control de Reparaciones - Registro</h1>
+            <div id="registroUserInfo">
+                <span>Bienvenido, [Usuario]</span>
+                <button id="registroLogoutButton">Cerrar Sesión</button>
+            </div>
+        </header>
+
+        <nav id="main-nav">
+            <h2>Menú</h2>
+            <ul>
+                <li><a href="#cola-reparaciones"onclick="window.location.href='listarepa.html'">Cola de Reparaciones</a></li>
+                <li><a href="#admin-usuarios"onclick="window.location.href='personal.html'">Administrar Personal</a></li>
+                <li><a href="#reportes"onclick="window.location.href='descargandose.html'">Generar Reportes</a></li>
+            </ul>
+        </nav>
+
+        <main id="app-content">
+            
+            <section id="registro-dispositivo">
+                <h2>Nuevo Registro de Dispositivo</h2>
+                
+                <form id="form-nuevo-registro">
+                    
+                    <fieldset>
+                        <legend>Datos del Cliente</legend>
+                        <div class="form-group">
+                            <label for="cliente-nombre">Nombre:</label>
+                            <input type="text" id="cliente-nombre" name="cliente-nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="cliente-telefono">Teléfono:</label>
+                            <input type="tel" id="cliente-telefono" name="cliente-telefono">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Datos del Dispositivo</legend>
+                        <div class="form-group">
+                            <label for="dispo-imei">IMEI:</label>
+                            <input type="text" id="dispo-imei" name="dispo-imei" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="dispo-falla">Falla reportada:</label>
+                            <textarea id="dispo-falla" name="dispo-falla"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="dispo-evidencia-fotos">Evidencia visual:</label>
+                            <input type="file" id="dispo-evidencia-fotos" name="dispo-evidencia-fotos">
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Pago y Ticket</legend>
+                        <div class="form-group">
+                            <label for="pago-anticipo">Anticipo:</label>
+                            <input type="number" id="pago-anticipo" name="pago-anticipo">
+                        </div>
+                    </fieldset>
+                    
+                    <button type="button"onclick="window.location.href='opciones.html'">Registrar y Generar Ticket/QR</button>
+                </form>
+            </section>
+
+            <section id="vista-tecnico" class="hidden">
+                <h2>Detalle de Reparación (Técnico)</h2>
+                
+                <form id="form-diagnostico-tecnico">
+                    <fieldset>
+                        <legend>Diagnóstico</legend>
+                        <div class="form-group">
+                            <label for="tecnico-diagnostico">Diagnóstico y Costo:</label>
+                            <textarea id="tecnico-diagnostico" name="tecnico-diagnostico"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="tecnico-evidencia">Evidencia de reparación:</label>
+                            <input type="file" id="tecnico-evidencia" name="tecnico-evidencia">
+                        </div>
+                    </fieldset>
+                    
+                    <button type="button" id="btn-marcar-finalizado">Marcar como Finalizado</button>
+                </form>
+            </section>
+        </main>
+        <footer id="main-footer">
+            <p>&copy; 2025 Fast Celular. Equipo 2 - Análisis y Modelado de Sistemas.</p>
+        </footer>
+
+    </div> 
+      <button class="btnregresar" onclick="window.location.href='opciones.html'">
+   Regresar a opciones
+</button>
+</body>
+</html>

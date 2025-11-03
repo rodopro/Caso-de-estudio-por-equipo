@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reportes - Fast Celular</title>
+  <link rel="stylesheet" href="celular.css">
+</head>
+<body class="reportesBody">
+
+  <header id="reportesHeader">
+    <h1>Reportes de Fast Celular</h1>
+  </header>
+
+  <main id="reportesMain">
+    <section class="reporteItem">
+      <span>Reportes de celulares reparados</span>
+      <button class="descargarBtn" onclick="descargando(this)">Descargar</button>
+    </section>
+
+    <section class="reporteItem">
+      <span>Reportes de cantidad de reparaciones de técnicos</span>
+      <button class="descargarBtn" onclick="descargando(this)">Descargar</button>
+    </section>
+
+    <section class="reporteItem">
+      <span>Reportes de gastos y ganancias</span>
+      <button class="descargarBtn" onclick="descargando(this)">Descargar</button>
+    </section>
+  </main>
+        <footer id="main-footer">
+            <p>&copy; 2025 Fast Celular. Equipo 2 - Análisis y Modelado de Sistemas.</p>
+        </footer>
+         <button class="btnregresar2" onclick="window.location.href='opciones.html'">
+   Regresar a opciones
+</button>
+  <script>
+    function descargando(btn) {
+      btn.textContent = "Descargando…";
+      btn.disabled = true;
+      setTimeout(() => {
+        btn.textContent = "Descargar";
+        btn.disabled = false;
+      }, 2000); // vuelve a estado normal después de 2 segundos
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Reparaciones</title>
+    <link rel="stylesheet" href="celular.css">
+</head>
+<body class="listabody">
+
+    <div class="listacontenedor">
+        <h1 class="listatitulo">Cola de Reparaciones de Dispositivos</h1>
+
+        <table class="listatabla">
+            <thead>
+                <tr>
+                    <th>IMEI</th>
+                    <th>Modelo</th>
+                    <th>Color</th>
+                    <th>Chip</th>
+                    <th>Accesorios</th>
+                    <th>Estado</th>
+                    <th>Observaciones</th>
+                    <th>ID Cliente</th>
+                    <th>ID Reparación</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>359871045612345</td>
+                    <td>Samsung Galaxy A15</td>
+                    <td>Azul</td>
+                    <td>Sí</td>
+                    <td>Funda, Cable</td>
+                    <td>En diagnóstico</td>
+                    <td>No enciende al conectar carga</td>
+                    <td>1001</td>
+                    <td>5001</td>
+                    <td><button class="listaboton"onclick="window.location.href='modificar.html'">Modificar datos</button></td>
+                </tr>
+                <tr>
+                    <td>864312087651234</td>
+                    <td>iPhone 12</td>
+                    <td>Negro</td>
+                    <td>No</td>
+                    <td>Sin accesorios</td>
+                    <td>En reparación</td>
+                    <td>Cambio de pantalla pendiente</td>
+                    <td>1002</td>
+                    <td>5002</td>
+                    <td><button class="listaboton"onclick="window.location.href='modificar.html'">Modificar datos</button></td>
+                </tr>
+                <tr>
+                    <td>357890123456789</td>
+                    <td>Motorola G Stylus</td>
+                    <td>Gris</td>
+                    <td>Sí</td>
+                    <td>Cargador</td>
+                    <td>Listo para entrega</td>
+                    <td>Reparación completada</td>
+                    <td>1003</td>
+                    <td>5003</td>
+                    <td><button class="listaboton"onclick="window.location.href='modificar.html'">Modificar datos</button></td>
+                </tr>
+                <tr>
+                    <td>358721045698745</td>
+                    <td>Xiaomi Redmi 10</td>
+                    <td>Blanco</td>
+                    <td>Sí</td>
+                    <td>Sin accesorios</td>
+                    <td>En espera de piezas</td>
+                    <td>Se dañó placa base</td>
+                    <td>1004</td>
+                    <td>5004</td>
+                    <td><button class="listaboton">Modificar datos</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <footer id="main-footer">
+            <p>&copy; 2025 Fast Celular. Equipo 2 - Análisis y Modelado de Sistemas.</p>
+        </footer>
+<button class="btnregresar2" onclick="window.location.href='opciones.html'">
+   Regresar a opciones
+</button>
+</body>
+</html>

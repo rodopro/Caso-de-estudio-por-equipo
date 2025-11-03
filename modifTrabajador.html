@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar Datos del Trabajador</title>
+    <link rel="stylesheet" href="celular.css">
+</head>
+<body class="modtrabbody">
+
+    <div class="modtrabcontenedor">
+        <h1 class="modtrabtitulo">Modificar Datos del Trabajador</h1>
+
+        <form class="modtrabformulario">
+            <div class="modtrabgrupo">
+                <label for="modtrabid">ID del Trabajador:</label>
+                <input type="text" id="modtrabid" name="modtrabid" value="2001" readonly>
+            </div>
+
+            <div class="modtrabgrupo">
+                <label for="modtrabnombre">Nombre Completo:</label>
+                <input type="text" id="modtrabnombre" name="modtrabnombre" value="María López">
+            </div>
+
+            <div class="modtrabgrupo">
+                <label for="modtrabtelefono">Teléfono:</label>
+                <input type="text" id="modtrabtelefono" name="modtrabtelefono" value="5541239876">
+            </div>
+
+            <div class="modtrabgrupo">
+                <label for="modtrabcorreo">Correo Electrónico:</label>
+                <input type="email" id="modtrabcorreo" name="modtrabcorreo" value="maria.lopez@vivero.com">
+            </div>
+
+            <div class="modtrabgrupo">
+                <label for="modtrabsucursal">Número de Sucursal:</label>
+                <input type="number" id="modtrabsucursal" name="modtrabsucursal" value="1">
+            </div>
+
+            <div class="modtrabgrupo">
+                <label for="modtrabtipo">Tipo de Empleado:</label>
+                <select id="modtrabtipo" name="modtrabtipo">
+                    <option value="Mostrador" selected>Mostrador</option>
+                    <option value="Técnico">Técnico</option>
+                </select>
+            </div>
+
+            <div class="modtrabgrupo">
+                <label for="modtrabantiguedad">Antigüedad:</label>
+                <input type="text" id="modtrabantiguedad" name="modtrabantiguedad" value="2 años">
+            </div>
+
+            <div class="modtrabbotones">
+                <button type="button" class="modtrabbtn-guardar"onclick="window.location.href='personal.html'">Guardar Cambios</button>
+                <button type="button" class="modtrabbtn-cancelar" onclick="window.location.href='personal.html'">Cancelar</button>
+            </div>
+        </form>
+    </div>
+<footer id="main-footer">
+            <p>&copy; 2025 Fast Celular. Equipo 2 - Análisis y Modelado de Sistemas.</p>
+        </footer>
+</body>
+</html>

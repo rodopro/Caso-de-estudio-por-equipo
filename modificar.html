@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar Datos del Dispositivo</title>
+    <link rel="stylesheet" href="celular.css">
+</head>
+<body class="modibody">
+
+    <div class="modicontenedor">
+        <h1 class="modititulo">Modificar Datos del Dispositivo</h1>
+
+        <form class="modiformulario">
+            <div class="modigrupo">
+                <label for="modiimei">IMEI:</label>
+                <input type="text" id="modiimei" name="imei" value="359871045612345">
+            </div>
+
+            <div class="modigrupo">
+                <label for="modimodelo">Modelo:</label>
+                <input type="text" id="modimodelo" name="modelo" value="Samsung Galaxy A15">
+            </div>
+
+            <div class="modigrupo">
+                <label for="modicolor">Color:</label>
+                <input type="text" id="modicolor" name="color" value="Azul">
+            </div>
+
+            <div class="modigrupo">
+                <label for="modichip">Chip:</label>
+                <select id="modichip" name="chip">
+                    <option value="si" selected>Sí</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <div class="modigrupo">
+                <label for="modiaccesorios">Accesorios:</label>
+                <input type="text" id="modiaccesorios" name="accesorios" value="Funda, Cable">
+            </div>
+
+            <div class="modigrupo">
+                <label for="modiestado">Estado:</label>
+                <select id="modiestado" name="estado">
+                    <option value="diagnostico" selected>En diagnóstico</option>
+                    <option value="reparacion">En reparación</option>
+                    <option value="espera">En espera de piezas</option>
+                    <option value="entrega">Listo para entrega</option>
+                </select>
+            </div>
+
+            <div class="modigrupo">
+                <label for="modiobservaciones">Observaciones:</label>
+                <textarea id="modiobservaciones" name="observaciones" rows="3">No enciende al conectar carga</textarea>
+            </div>
+
+            <div class="modigrupo">
+                <label for="modiid_cliente">ID Cliente:</label>
+                <input type="number" id="modiid_cliente" name="id_cliente" value="1001">
+            </div>
+
+            <div class="modigrupo">
+                <label for="modiid_reparacion">ID Reparación:</label>
+                <input type="number" id="modiid_reparacion" name="id_reparacion" value="5001">
+            </div>
+
+            <div class="modibotones">
+                <button type="button" class="modiboton"onclick="window.location.href='listarepa.html'">Guardar Cambios</button>
+                <a  class="modiboton modi-cancelar"onclick="window.location.href='opciones.html'">Cancelar</a>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
